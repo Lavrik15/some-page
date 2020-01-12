@@ -1,0 +1,64 @@
+.steps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 68px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: #D5D7DC;
+  }
+
+  &__header {
+    font-family: 'Proxima Nova Semibold';
+    font-size: 18px;
+  }
+
+  &__point {
+    width: 16px;
+    height: 16px;
+    background-color: #D5D7DC;
+    border-radius: 50%;
+    margin-bottom: 24px;
+
+    &--active {
+      position: relative;
+      background-color: #FFB300;
+      z-index: 2;
+    }
+  }
+
+  @media($mobileLarge) {
+    flex-direction: column;
+    padding-bottom: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      height: 100%;
+      background-color: #D5D7DC;
+    }
+    &__item {
+      padding-left: 25px;
+    }
+    &__item + &__item {
+      margin-top: 20px;
+    }
+    &__header {
+      position: relative;
+      top: -3px;
+    }
+    &__point {
+      position: absolute;
+      left: -7px;
+    }
+  }
+}

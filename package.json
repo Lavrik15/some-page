@@ -1,0 +1,46 @@
+{
+  "name": "wellmax",
+  "version": "1.0.0",
+  "description": "тестовое",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp prod --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "browser-sync": "^2.26.3",
+    "browserslist": "^4.3.6",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-hash-src": "^0.1.6",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-inject": "^5.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-tap": "^1.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^6.0.0",
+    "path": "^0.12.7",
+    "posthtml-include": "^1.2.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "author": "Lavrik",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-base64-inline": "^1.0.6",
+    "gulp-if": "^3.0.0",
+    "yargs": "^15.1.0"
+  }
+}

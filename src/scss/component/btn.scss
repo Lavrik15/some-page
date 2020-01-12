@@ -1,0 +1,42 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 48px;
+  width: 248px;
+  min-height: 48px;
+  padding: 0 23px;
+  border: none;
+  background-color: $btn-bg-color;
+  color: $btn-color;
+  text-decoration: none;
+  box-shadow: 0px 16.9257px 16.9257px rgba(45, 102, 235, 0.13), 0px 4.23142px 8.46285px rgba(45, 105, 235, 0.12), 0px -2.11571px 5.28928px rgba(76, 132, 255, 0.05);
+  border-radius: 52.8928px;
+
+
+  &:hover {
+    cursor: pointer;
+  }
+  &--text-left {
+    text-align: left;
+  }
+  &--text-center {
+    text-align: center;
+  }
+  &--arrow-right:after {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-image: inline("../images/arrow-btn.svg");
+  }
+  &--info {
+    color: $btn-info-color;
+    background-color: $btn-bg-info;
+    box-shadow: none;
+  }
+}

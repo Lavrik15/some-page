@@ -1,0 +1,46 @@
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+
+  &:hover, &__input, &__mark{
+    cursor: pointer;
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  &__mark {
+    flex-shrink: 0;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-color: $checkbox-color;
+    border-radius: 2px;
+    margin-right: 19px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-top: -3px;
+  }
+}
+
+.checkbox__input:checked ~ .checkbox__mark {
+  display: block;
+  background-image: inline("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.checkbox__mark:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+}

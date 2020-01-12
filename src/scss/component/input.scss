@@ -1,0 +1,30 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  & + .input {
+    margin-top: 96px;
+  }
+  &__label {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  &__item {
+    position: relative;
+    font-size: 18px;
+    height: 40px;
+    padding: 0;
+    padding-left: 5px;
+    border: none;
+    color: $main-text-color;
+    border-bottom: 2px solid #D5D7DC;
+    background-image: inline("../images/round.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+
+    &--filed {
+      background-image: inline("../images/round.svg"), inline("../images/icon-check--green.svg");
+      background-position: 100% 50%, 99% 50%;
+    }
+  }
+}
